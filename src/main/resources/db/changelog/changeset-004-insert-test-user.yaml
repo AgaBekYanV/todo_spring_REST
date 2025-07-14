@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004-insert-test-user
+      author: Vyacheslav
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: password
+                  value: $2a$10$8q7Z1Z1Z1Z1Z1Z1Z1Z1Z1u.12345678901234567890123456789012  # BCrypt для "password"
+              - column:
+                  name: enabled
+                  valueBoolean: true
+        - insert:
+            tableName: authorities
+            columns:
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: authority
+                  value: ROLE_USER
