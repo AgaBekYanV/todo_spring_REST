@@ -11,7 +11,7 @@ databaseChangeLog:
                   value: admin
               - column:
                   name: password
-                  value: $2a$10$8q7Z1Z1Z1Z1Z1Z1Z1Z1Z1u.12345678901234567890123456789012  # BCrypt для "password"
+                  value: $2a$12$qP.5WQiO265aIyAQTLtwq.F79nFOZoH41FkZ.a/GQF6F.8Dis5mwq  # BCrypt для "password"
               - column:
                   name: enabled
                   valueBoolean: true
